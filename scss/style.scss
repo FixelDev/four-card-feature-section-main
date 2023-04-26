@@ -1,0 +1,117 @@
+@import 'config';
+@import 'utilities';
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: $very-light-gray;
+    color: $very-dark-blue;
+}
+
+footer
+{
+    padding: 20px 0;
+
+    a
+    {
+        text-decoration: none;
+        color: $red;
+    }
+}
+
+.main-header
+{
+    .container
+    {
+        max-width: 550px;
+        padding: 40px 15px;
+        text-align: center;
+        
+    }
+
+    .title
+    {
+        font-weight: 200;
+
+        .main-title
+        {
+           font-weight: 600; 
+        }
+
+    }
+
+    .lead
+    {
+        color: $grayish-blue;
+        margin-top: 15px;
+    }
+}
+
+main
+{   
+
+    .card
+    {
+        background-color: #fff;
+        height: 250px;
+        box-shadow: 0px 14px 18px 0px rgba($very-dark-blue, 0.15);
+        border-radius: 5px;
+        border-top: 5px solid;
+
+        .container
+        {
+            width: 85%;
+            height: 80%;
+            padding: 0;
+            position: relative;
+        }
+
+        .lead
+        {
+            margin-top: 8px;
+            color: $grayish-blue;
+        }
+
+        .card-img
+        {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .card:nth-child(1)
+    {
+        border-top-color: $cyan;
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
+
+    .card:nth-child(2)
+    {
+        border-top-color: $red;    
+    }
+
+    .card:nth-child(3)
+    {
+        border-top-color: $orange;
+    }
+
+    .card:nth-child(4)
+    {
+        border-top-color: $blue;
+        grid-row: 1 / span 2;
+        align-self: center;
+        grid-column: 3;
+    }
+}
+
+@import 'mobile';

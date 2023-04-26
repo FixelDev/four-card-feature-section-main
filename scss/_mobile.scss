@@ -1,0 +1,42 @@
+@media(max-width: 765px)
+{
+    .grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .main-header
+    {
+        .title
+        {
+            font-size: 1.6rem;
+        }
+    }
+
+    main
+    {
+        .card:nth-child(1)
+        {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .card:nth-child(2)
+        {
+            border-top-color: $red;    
+            grid-column: 1;
+        }
+    
+        .card:nth-child(3)
+        {
+            border-top-color: $orange;
+            grid-column: 1;
+        }
+    
+        .card:nth-child(4)
+        {
+            grid-row: 4;
+            grid-column: 1;
+        }
+    }
+}
